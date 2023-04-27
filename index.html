@@ -1,117 +1,246 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Rodrigo">
-    <meta name="description" content="Blog de Juegos">
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="./CSS/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rodrigo" />
+    <meta name="description" content="Blog de Juegos" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
     <title>Blog de Juegos</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+      <nav class="navbar navbar-expand-lg container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/otraPagina.html"
+                  >Otra pagina</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <div
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i id="iconThemeShow" class="bi bi-brightness-high-fill"></i>
+                </div>
+                <ul class="dropdown-menu">
+                  <li>
+                    <button id="btn_light" class="dropdown-item">
+                      <i class="bi bi-brightness-high-fill"></i> Light
+                    </button>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/otraPagina.html">Otra pagina</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <div class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i id="iconThemeShow" class="bi bi-brightness-high-fill"></i>
-                    </div>
-                    <ul class="dropdown-menu">
-                      <li><button id="btn_light" class="dropdown-item"><i class="bi bi-brightness-high-fill"></i> Light</button></li>
-                      <li><button id="btn_dark" class="dropdown-item"><i class="bi bi-moon-fill"></i> Dark</button></li>
-                    </ul>
+                  <li>
+                    <button id="btn_dark" class="dropdown-item">
+                      <i class="bi bi-moon-fill"></i> Dark
+                    </button>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-        </nav>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="container">
-            <h1 class="text-center">Reviews de Juegos</h1>
-            <div class="row">
-                <div class="col-md-6  mb-3">
-                    <div class="card w-100">
-                        <img src="./images/StardewValley.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Stardew Valley</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6  mb-3">
-                    <div class="card w-100">
-                        <img src="./images/zeldaLinksAwakening.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Zelda Link's Awakening</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6  mb-3">
-                    <div class="card w-100">
-                        <img src="./images/SuperMarioBrosUDeluxe.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Super Mario Bros Deluxe</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6  mb-3">
-                    <div class="card w-100">
-                        <img src="./images/Kirby'sReturnToDreamLandDeluxe.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Kirby's Return to Dream Land Deluxe</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6  mb-3">
-                    <div class="card w-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6  mb-3">
-                    <div class="card w-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
+      <section class="container my-5">
+        <h1 class="text-center mb-4">Reviews de Juegos</h1>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="card w-100">
+              <img
+                src="./images/StardewValley.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Stardew Valley</h5>
+                <p class="card-text text-truncate d-inline-block w-100">
+                  El análisis de Stardew Valley muestra que es un juego de
+                  simulación de granja altamente adictivo y emocionante que
+                  ofrece una experiencia de juego relajante y gratificante. Con
+                  su hermoso estilo de arte pixelado, banda sonora envolvente y
+                  jugabilidad profunda, Stardew Valley ha ganado una gran base
+                  de fans y ha sido aclamado por la crítica desde su lanzamiento
+                  en 2016. Los jugadores pueden cultivar cultivos, criar
+                  animales, explorar las cuevas mineras, pescar en el río y
+                  socializar con los habitantes del pueblo mientras trabajan
+                  para restaurar su granja y mejorar sus habilidades. El juego
+                  tiene un ciclo estacional y ofrece una amplia variedad de
+                  misiones, desafíos y eventos que mantienen al jugador
+                  comprometido y entretenido a lo largo del juego. En resumen,
+                  Stardew Valley es un juego increíblemente divertido y
+                  relajante que ofrece una experiencia de juego adictiva y
+                  gratificante para los fanáticos de los juegos de simulación de
+                  granja. Su estilo de arte encantador, banda sonora envolvente
+                  y jugabilidad profunda lo hacen perfecto para los jugadores
+                  que buscan una experiencia de juego relajante y atractiva.
+                </p>
+                <a href="#" class="btn btn-success px-3">Ir al articulo</a>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card w-100">
+              <img
+                src="./images/zeldaLinksAwakening.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Zelda Link's Awakening</h5>
+                <p class="card-text text-truncate d-inline-block w-100">
+                  Este juego es un clásico de la franquicia de The Legend of
+                  Zelda, y su versión original fue lanzada para la Game Boy en
+                  1993. La versión más reciente de este juego, lanzada en 2019
+                  para la consola Nintendo Switch, es una versión remasterizada
+                  en alta definición que presenta una serie de mejoras y
+                  adiciones. El juego sigue las aventuras del héroe Link, quien
+                  naufraga en la misteriosa Isla Koholint. Allí, Link debe
+                  explorar la isla y completar una serie de misiones y desafíos
+                  para encontrar una manera de escapar de la isla. A lo largo
+                  del juego, Link se enfrenta a una serie de enemigos y jefes
+                  mientras resuelve acertijos y descubre los secretos de la
+                  isla. El juego presenta un estilo de arte encantador y una
+                  banda sonora increíble que transporta al jugador a un mundo
+                  lleno de magia y misterio. Además, la jugabilidad mejorada de
+                  la versión remasterizada ofrece una experiencia de juego
+                  emocionante y gratificante, con controles suaves y precisos.
+                  En general, The Legend of Zelda: Link's Awakening es un juego
+                  imprescindible para los fanáticos de la serie y para cualquier
+                  jugador que busque una experiencia de juego inmersiva y
+                  emocionante. Con su encantador estilo de arte, su increíble
+                  banda sonora y su jugabilidad mejorada, este juego es una
+                  verdadera obra maestra que no decepcionará a ningún jugador.
+                  ¡No se pierdan este increíble juego en la Nintendo Switch!
+                </p>
+                <a href="#" class="btn btn-success px-3">Ir al articulo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card w-100">
+              <img
+                src="./images/SuperMarioBrosUDeluxe.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Super Mario Bros Deluxe</h5>
+                <p class="card-text text-truncate d-inline-block w-100">
+                  Super Mario Bros Deluxe es una versión mejorada del clásico
+                  juego de plataformas Super Mario Bros, lanzado originalmente
+                  para la Game Boy Color en 1999. La versión mejorada de este
+                  juego, lanzada en 2019 para la consola Nintendo Switch,
+                  presenta una serie de mejoras y adiciones para mejorar la
+                  experiencia de juego. El juego sigue las aventuras del icónico
+                  personaje de Nintendo, Mario, quien debe navegar por varios
+                  niveles llenos de enemigos y peligros para rescatar a la
+                  princesa Peach. El juego presenta una jugabilidad clásica de
+                  plataformas que es fácil de aprender pero difícil de dominar,
+                  con controles precisos y una gran variedad de enemigos y
+                  obstáculos para superar. La versión mejorada de Super Mario
+                  Bros Deluxe presenta varias mejoras y adiciones, incluyendo
+                  nuevos modos de juego, niveles adicionales y gráficos
+                  mejorados. Además, el juego cuenta con un modo multijugador
+                  que permite a dos jugadores competir en una carrera para ver
+                  quién puede completar un nivel más rápido. En general, Super
+                  Mario Bros Deluxe es un juego imprescindible para los
+                  fanáticos de la franquicia de Super Mario y para cualquier
+                  jugador que busque una experiencia de juego clásica y
+                  emocionante. Con su jugabilidad clásica, gráficos mejorados y
+                  nuevas adiciones, este juego es una verdadera joya que no
+                  decepcionará a ningún jugador. ¡No se pierdan este increíble
+                  juego en la Nintendo Switch!
+                </p>
+                <a href="#" class="btn btn-success px-3">Ir al articulo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card w-100">
+              <img
+                src="./images/Kirby'sReturnToDreamLandDeluxe.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kirby's Return to Dream Land Deluxe</h5>
+                <p class="card-text text-truncate d-inline-block w-100">
+                  Kirby's Return to Dream Land Deluxe es una versión mejorada
+                  del juego original Kirby's Return to Dream Land, lanzado
+                  originalmente para la consola Wii en 2011. La versión mejorada
+                  de este juego, lanzada en 2021 para la consola Nintendo
+                  Switch, presenta una serie de mejoras y adiciones para mejorar
+                  la experiencia de juego. El juego sigue las aventuras del
+                  icónico personaje de Nintendo, Kirby, quien debe viajar a
+                  través de varios mundos y niveles para recuperar las partes de
+                  una nave estrellada y restaurarla. Kirby cuenta con la
+                  habilidad de inhalar a sus enemigos y adquirir sus
+                  habilidades, lo que le permite derrotar a enemigos y superar
+                  obstáculos de manera única. La versión mejorada de Kirby's
+                  Return to Dream Land presenta nuevas adiciones y mejoras,
+                  incluyendo nuevos modos de juego, niveles adicionales y
+                  gráficos mejorados en alta definición. Además, el juego cuenta
+                  con un modo multijugador que permite a cuatro jugadores jugar
+                  juntos en una aventura cooperativa. En general, Kirby's Return
+                  to Dream Land Deluxe es un juego imprescindible para los
+                  fanáticos de la franquicia de Kirby y para cualquier jugador
+                  que busque una experiencia de juego divertida y emocionante.
+                  Con su jugabilidad única, gráficos mejorados y nuevas
+                  adiciones, este juego es una verdadera joya que no
+                  decepcionará a ningún jugador. ¡No se pierdan este increíble
+                  juego en la Nintendo Switch!
+                </p>
+                <a href="#" class="btn btn-success px-3">Ir al articulo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
     <script src="./JS/app.js"></script>
-</body>
+  </body>
 </html>
