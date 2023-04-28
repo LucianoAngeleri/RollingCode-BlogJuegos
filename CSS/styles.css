@@ -2,3 +2,7 @@
 .contenedor-Titulo{
     margin-top: -25vmin;
 }
+.gradiente-Titulo{
+    text-shadow: 0 0 2rem black;
+    background: linear-gradient(to top,var(--bs-body-bg) 45%,transparent 160%)!important;
+}
