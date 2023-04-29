@@ -6,3 +6,8 @@
     text-shadow: 0 0 2rem black;
     background: linear-gradient(to top,var(--bs-body-bg) 45%,transparent 160%)!important;
 }
+/* Footer styles */
+.footer{
+    height: auto;
+    padding: 30px 0;
+}
