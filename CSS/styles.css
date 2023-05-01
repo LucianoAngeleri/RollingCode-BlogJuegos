@@ -6,3 +6,32 @@
     text-shadow: 0 0 2rem black;
     background: linear-gradient(to top,var(--bs-body-bg) 45%,transparent 160%)!important;
 }
+
+@font-face {
+    font-family: "AmazonEmber";
+    src: url(../fonts/AmazonEmber_Rg.ttf);
+}
+:root {
+  
+  /*Colores para ventanas de funcionalidades nuevas*/
+    --nuevo_base: #00464F;
+    --nuevo_light: #D7EBEB;
+    --nuevo_dark: #001F27;
+  
+    --btn_light_default: rgba(255, 255, 255, 0.5);
+}
+.card-body{
+    background: rgb(61, 239, 162) !important;
+}
+.ilustracion_svg_aboutUs{
+  animation: svgAboutUsAnimation ease-in-out 1.4s infinite alternate;
+}
+@keyframes svgAboutUsAnimation {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.04);
+  }
+}
+
