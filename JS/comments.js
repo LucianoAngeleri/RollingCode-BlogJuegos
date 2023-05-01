@@ -31,4 +31,27 @@ function addComment(nombre, comentario) {
 </div>`;
 
   document.getElementById("formComentario").reset();
+
+  
 }
+
+const form = document.querySelector("#formComentario");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const nameInput = document.querySelector("#nombreComentario");
+    const commentInput = document.querySelector("#comentario");
+
+    if (nameInput.value.trim() === "") {
+      nameInput.setCustomValidity("Debe ingresar un nombre");
+      return;
+    }
+
+    if (commentInput.value.trim() === "") {
+      commentInput.setCustomValidity("Debe ingresar un comentario");
+      return;
+    }
+
+    form.submit();
+  });
