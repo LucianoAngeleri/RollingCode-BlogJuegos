@@ -6,6 +6,8 @@ formulario.addEventListener("submit", function (event) {
   const nombre = document.getElementById("nombreComentario");
   const comentario = document.getElementById("comentario");
 
+ 
+
   addComment(nombre.value, comentario.value);
 });
 
@@ -44,14 +46,17 @@ const form = document.querySelector("#formComentario");
     const commentInput = document.querySelector("#comentario");
 
     if (nameInput.value.trim() === "") {
-      nameInput.setCustomValidity("Debe ingresar un nombre");
-      return;
-    }
+        nameInput.setCustomValidity("Debe ingresar un nombre");
+        return;
+      }
+    
+      if (commentInput.value.trim() === "") {
+        commentInput.setCustomValidity("Debe ingresar un comentario");
+        return;
+      }
+    
 
-    if (commentInput.value.trim() === "") {
-      commentInput.setCustomValidity("Debe ingresar un comentario");
-      return;
-    }
+    
 
     form.submit();
   });
