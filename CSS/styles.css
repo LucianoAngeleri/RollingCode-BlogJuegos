@@ -6,7 +6,11 @@
 
 .gradiente-Titulo {
     text-shadow: 0 0 2rem black;
-    background: linear-gradient(to top, var(--bs-body-bg) 45%, transparent 160%) !important;
+    background: linear-gradient(to top,var(--bs-body-bg) 45%,transparent 160%)!important;
+}
+/* Clase remover articulos */
+.remover_articulo {
+    display: none;
 }
 
 @font-face {
@@ -46,3 +50,4 @@
     ul {
         list-style: none;
     }
+
