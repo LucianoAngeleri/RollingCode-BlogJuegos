@@ -14,8 +14,6 @@ input_filtro_articulos.addEventListener("keyup", e => {
     //console.log(articulos);
     // 4 Ahora recorremos todos los articulos con un forEach
     articulos.forEach((articulo)=>{
-        console.log(articulo);
-
         // 5 Seleccionamos todos los elementos dentro del nodo articulo que tengan la clase .titulos_articulos
         // es decir metemos en un array todos los titulos de los articulos
         // 6 luego con el forEach recorremos cada uno de esos titulos
