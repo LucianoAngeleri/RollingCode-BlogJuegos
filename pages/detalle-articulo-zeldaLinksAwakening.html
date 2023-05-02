@@ -32,7 +32,7 @@
                 <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/otraPagina.html">Otra pagina</a>
+                <a class="nav-link" href="../pages/aboutUs.html">Acerca de Nosotros</a>
               </li>
               <li class="nav-item dropdown">
                 <div class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -350,7 +350,7 @@
         <article class="border rounded-3 p-4 shadow-sm">
           <h4 class="display-4">Deja tu comentario!</h4>
           <hr />
-          <form id="formComentario" id="button">
+          <form id="formComentario">
             <div class="mb-3">
               <label for="nombreComentario" class="form-label">Nombre</label>
               <input
@@ -368,7 +368,7 @@
                 id="comentario"
                 rows="5"
                 placeholder="Escribe tu comentario aqui..."></textarea>
-              <button class="btn btn-outline-primary" type="button" id="btnComentar">
+              <button class="btn btn-outline-primary" type="submit" id="btnComentar">
                 <i class="bi bi-send px-1"></i>
               </button>
             </div>
@@ -378,35 +378,7 @@
       <section class="container my-3">
         <h5 class="display-5">Otros gamers comentan:</h5>
         <hr />
-        <div class="card mb-3 shadow rounded-4">
-          <div class="card-body">
-            <div class="d-flex flex-row align-items-baseline gap-3">
-              <i class="bi bi-person-circle fs-1"></i>
-              <h5 class="card-title">MicaelaLopez</h5>
-            </div>
-            <p class="card-text">
-              <i class="bi bi-quote fs-3"></i>
-              ¡Qué locura este Zelda Link's Awakening! Me encanta la jugabilidad, la música y los personajes, todo es
-              tan mágico y entretenido. No puedo esperar a descubrir todos los secretos de la isla Holint.
-            </p>
-            <p class="card-text text-end"><small class="text-muted">Actualizado hace 5 mins</small></p>
-          </div>
-        </div>
-        <div class="card mb-3 shadow rounded-4">
-          <div class="card-body">
-            <div class="d-flex flex-row align-items-baseline gap-3">
-              <i class="bi bi-person-circle fs-1"></i>
-              <h5 class="card-title">FacundoGonzalez</h5>
-            </div>
-            <p class="card-text">
-              <i class="bi bi-quote fs-3"></i>
-              ¡Qué buen juego este Zelda Link's Awakening! Me trae nostalgia de la versión original, pero con gráficos y
-              mecánicas mejoradas. Los puzzles de las mazmorras son desafiantes y divertidos. Definitivamente es un
-              juego que recomiendo a los fans de la saga Zelda.
-            </p>
-            <p class="card-text text-end"><small class="text-muted">Actualizado hace 10 mins</small></p>
-          </div>
-        </div>
+        <ul class="list-unstyled" id="list-commets"></ul>
       </section>
     </main>
     <hr>
@@ -443,5 +415,6 @@
       crossorigin="anonymous"></script>
     <script src="../JS/app.js"></script>
     <script src="../JS/ad.js"></script>
+    <script src="../JS/comments.js"></script>
   </body>
 </html>

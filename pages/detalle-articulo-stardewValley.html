@@ -32,7 +32,7 @@
                 <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/otraPagina.html">Otra pagina</a>
+                <a class="nav-link" href="../pages/aboutUs.html">Acerca de Nosotros</a>
               </li>
               <li class="nav-item dropdown">
                 <div class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,7 +227,7 @@
         <article class="border rounded-3 p-4 shadow-sm">
           <h4 class="display-4">Deja tu comentario!</h4>
           <hr />
-          <form id="formComentario" id="button">
+          <form id="formComentario">
             <div class="mb-3">
               <label for="nombreComentario" class="form-label">Nombre</label>
               <input
@@ -235,8 +235,12 @@
                 id="nombreComentario"
                 class="form-control"
                 placeholder="Ej. Juan Pérez"
-                aria-describedby="helpId" />
-              <small id="helpId" class="text-muted">Ingrese el nombre para dejar un comentario.</small>
+                aria-describedby="helpId"
+                required
+              />
+              <small id="helpId" class="text-muted"
+                >Ingrese el nombre para dejar un comentario.</small
+              >
             </div>
             <div class="input-group mb-3">
               <textarea
@@ -244,8 +248,14 @@
                 aria-label="Comentario"
                 id="comentario"
                 rows="5"
-                placeholder="Escribe tu comentario aqui..."></textarea>
-              <button class="btn btn-outline-primary" type="submit" id="btnComentar">
+                placeholder="Escribe tu comentario aqui..."
+                required
+              ></textarea>
+              <button
+                class="btn btn-outline-primary"
+                type="submit"
+                id="btnComentar"
+              >
                 <i class="bi bi-send px-1"></i>
               </button>
             </div>
@@ -255,8 +265,7 @@
       <section class="container my-3">
         <h5 class="display-5">Otros gamers comentan:</h5>
         <hr />
-
-        <ul id="list-commets"></ul>
+        <ul class="list-unstyled" id="list-commets"></ul>
       </section>
     </main>
     <hr />
