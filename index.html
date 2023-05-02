@@ -37,8 +37,8 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/otraPagina.html"
-                  >Otra pagina</a
+                <a class="nav-link" href="./pages/aboutUs.html"
+                  >Acerca de nosotros</a
                 >
               </li>
               <li class="nav-item dropdown">
@@ -68,12 +68,10 @@
               <input
                 class="form-control me-2"
                 type="search"
-                placeholder="Buscar"
+                placeholder="Buscar articulo"
                 aria-label="Buscar"
+                id="input_filtro_articulos"
               />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
             </form>
           </div>
         </div>
@@ -83,7 +81,7 @@
       <section class="container my-5">
         <h1 class="text-center mb-4">Reviews de Juegos</h1>
         <div class="row">
-          <div class="col-md-6 mb-3">
+          <div class="col-md-6 mb-3 articulos">
             <div class="card w-100">
               <img
                 src="./images/StardewValley.webp"
@@ -91,7 +89,7 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Stardew Valley</h5>
+                <h5 class="card-title titulos_articulos">Stardew Valley</h5>
                 <p class="card-text text-truncate d-inline-block w-100">
                   El análisis de Stardew Valley muestra que es un juego de
                   simulación de granja altamente adictivo y emocionante que
@@ -117,7 +115,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-3">
+          <div class="col-md-6 mb-3 articulos">
             <div class="card w-100">
               <img
                 src="./images/zeldaLinksAwakening.jpg"
@@ -125,7 +123,7 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Zelda Link's Awakening</h5>
+                <h5 class="card-title titulos_articulos">Zelda Link's Awakening</h5>
                 <p class="card-text text-truncate d-inline-block w-100">
                   Este juego es un clásico de la franquicia de The Legend of
                   Zelda, y su versión original fue lanzada para la Game Boy en
@@ -155,7 +153,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-3">
+          <div class="col-md-6 mb-3 articulos">
             <div class="card w-100">
               <img
                 src="./images/SuperMarioBrosUDeluxe.jpg"
@@ -163,7 +161,7 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Super Mario Bros Deluxe</h5>
+                <h5 class="card-title titulos_articulos">Super Mario Bros Deluxe</h5>
                 <p class="card-text text-truncate d-inline-block w-100">
                   Super Mario Bros Deluxe es una versión mejorada del clásico
                   juego de plataformas Super Mario Bros, lanzado originalmente
@@ -194,7 +192,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-3">
+          <div class="col-md-6 mb-3 articulos">
             <div class="card w-100">
               <img
                 src="./images/Kirby'sReturnToDreamLandDeluxe.webp"
@@ -202,7 +200,7 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Kirby's Return to Dream Land Deluxe</h5>
+                <h5 class="card-title titulos_articulos">Kirby's Return to Dream Land Deluxe</h5>
                 <p class="card-text text-truncate d-inline-block w-100">
                   Kirby's Return to Dream Land Deluxe es una versión mejorada
                   del juego original Kirby's Return to Dream Land, lanzado
@@ -270,5 +268,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./JS/app.js"></script>
+    <script src="./JS/articleFilters.js"></script>
   </body>
 </html>
