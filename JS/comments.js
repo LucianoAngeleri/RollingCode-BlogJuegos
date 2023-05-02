@@ -1,10 +1,15 @@
 const formulario = document.getElementById("formComentario");
 
+const nombre = document.getElementById("nombreComentario");
+const comentario = document.getElementById("comentario");
+
+nombre.addEventListener("input", validateName);
+comentario.addEventListener("input", validateComment)
+
 formulario.addEventListener("submit", function (event) {
   event.preventDefault();
-
-  const nombre = document.getElementById("nombreComentario");
-  const comentario = document.getElementById("comentario");
+  validateName();
+  validateComment();
 
   addComment(nombre.value, comentario.value);
 });
@@ -30,28 +35,25 @@ function addComment(nombre, comentario) {
   </div>
 </div>`;
 
-  document.getElementById("formComentario").reset();
+  // document.getElementById("formComentario").reset();
+}
 
+function validateName() {
+  if (nombre.value.trim() === "") {
+    nombre.setCustomValidity("Debe ingresar un nombre");
+    return
+  } else {
+    nombre.setCustomValidity("");
+    }
   
 }
 
-const form = document.querySelector("#formComentario");
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const nameInput = document.querySelector("#nombreComentario");
-    const commentInput = document.querySelector("#comentario");
-
-    if (nameInput.value.trim() === "") {
-      nameInput.setCustomValidity("Debe ingresar un nombre");
-      return;
-    }
-
-    if (commentInput.value.trim() === "") {
-      commentInput.setCustomValidity("Debe ingresar un comentario");
-      return;
-    }
-
-    form.submit();
-  });
+function validateComment() {
+    if (comentario.value.trim() === "") {
+      comentario.setCustomValidity("Debe ingresar un comentario");
+      return
+    } else {
+      comentario.setCustomValidity("");
+      }
+    
+  }
