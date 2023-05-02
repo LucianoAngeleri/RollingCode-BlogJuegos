@@ -4,7 +4,7 @@ const nombre = document.getElementById("nombreComentario");
 const comentario = document.getElementById("comentario");
 
 nombre.addEventListener("input", validateName);
-comentario.addEventListener("input", validateComment)
+comentario.addEventListener("input", validateComment);
 
 formulario.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -35,25 +35,23 @@ function addComment(nombre, comentario) {
   </div>
 </div>`;
 
-  // document.getElementById("formComentario").reset();
+  document.getElementById("formComentario").reset();
 }
 
 function validateName() {
   if (nombre.value.trim() === "") {
     nombre.setCustomValidity("Debe ingresar un nombre");
-    return
+    nombre.reportValidity();
   } else {
     nombre.setCustomValidity("");
-    }
-  
+  }
 }
 
 function validateComment() {
-    if (comentario.value.trim() === "") {
-      comentario.setCustomValidity("Debe ingresar un comentario");
-      return
-    } else {
-      comentario.setCustomValidity("");
-      }
-    
+  if (comentario.value.trim() === "") {
+    comentario.setCustomValidity("Debe ingresar un comentario");
+    comentario.reportValidity();
+  } else {
+    comentario.setCustomValidity("");
   }
+}
