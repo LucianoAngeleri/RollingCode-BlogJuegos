@@ -13,9 +13,6 @@
     display: none;
 }
 
-    background: linear-gradient(to top, var(--bs-body-bg) 45%, transparent 160%) !important;
-}
-
 @font-face {
     font-family: "AmazonEmber";
     src: url(../fonts/AmazonEmber_Rg.ttf);
