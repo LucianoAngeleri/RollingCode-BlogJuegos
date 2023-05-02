@@ -8,10 +8,13 @@ comentario.addEventListener("input", validateComment);
 
 formulario.addEventListener("submit", function (event) {
   event.preventDefault();
-  validateName();
-  validateComment();
-
-  addComment(nombre.value, comentario.value);
+  if (validateName() && validateComment()) {
+    addComment(nombre.value, comentario.value);
+    document.getElementById("formComentario").reset();
+  } else {
+    nombre.reportValidity();
+    comentario.reportValidity();
+  }
 });
 
 function addComment(nombre, comentario) {
@@ -42,8 +45,10 @@ function validateName() {
   if (nombre.value.trim() === "") {
     nombre.setCustomValidity("Debe ingresar un nombre");
     nombre.reportValidity();
+    return false;
   } else {
     nombre.setCustomValidity("");
+    return true;
   }
 }
 
@@ -51,7 +56,9 @@ function validateComment() {
   if (comentario.value.trim() === "") {
     comentario.setCustomValidity("Debe ingresar un comentario");
     comentario.reportValidity();
+    return false;
   } else {
     comentario.setCustomValidity("");
+    return true;
   }
 }
